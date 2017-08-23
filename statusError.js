@@ -5,10 +5,8 @@ function StatusError(msg, status) {
     return err;
 }
 
-
 StatusError.prototype = Object.create(Error.prototype, {
   constructor: { value: StatusError }
 });
 
 module.exports = StatusError;
-
